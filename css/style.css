@@ -19,10 +19,11 @@ html{
 body{
 
     background-color: #ff9800;
-    width: 100%;
+    width: 100vw;
     min-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
+    line-height: normal;
 
 }
 
@@ -32,41 +33,109 @@ img {
 
 }
 
+a{
+
+    text-decoration: none;
+
+}
+
+/* Correción de colores de todas las páginas */
+.header__box--logo h1,
+.nav__ulist__item__a,
+.section__presentation__f h1,
+.section__presentation__2__s h1,
+.section__presentation__3__t h1,
+.box__section__product__1 h2,
+.box__section__product__2 h2,
+.box__section__product__3 h2,
+.box__section__product__4 h2,
+.box__section__product__5 h2,
+.box__section__product__6 h2,
+.box__section__product__1 h4,
+.box__section__product__2 h4,
+.box__section__product__3 h4,
+.box__section__product__4 h4,
+.box__section__product__5 h4,
+.box__section__product__6 h4,
+.box__section__us__0,
+.box__section__us a,
+.box__section__us__1 p,
+.box__section__us__2 p,
+.box__section__us__3 p,
+.box__section__us__4 p,
+.box__section__location,
+.box__section__location__subtitle,
+.box__section__contact,
+.box__section__info,
+.check__2 label a,
+.footer__ul--leg li a,
+.footer--leg1, 
+.footer--leg2 {
+
+    color: #000000;
+    line-height: normal;
+
+}
+
 .grid-index{
 
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid: 80px 563px 563px 563px 100px / 49% 49%;
+    grid: 1fr 2fr 1fr / 1fr;
     grid-template-areas: 
-    "header   header"
-    "content0 content1"
-    "content2 content3"
-    "content4 content5"
-    "footer   footer";
+    "header"
+    "content-0"
+    "footer";
 
 }
 
 .header{
 
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: #f57c00;
     width: 100vw;
-    height: 80px;
-    grid-area: header;
     box-shadow: 5px 0 10px #f57c00;
     z-index: 2;
 
 }
 
-.box__nav{
+.header__box--logo{
 
     display: flex;
-    justify-content: center;
-    font-family: 'Bebas Neue', cursive;
+    padding-left: 10px;
 
 }
 
-#nav__check{
+.header__box--logo img{
+
+    width: 5rem;
+    
+}
+
+.header__box--logo h1{
+
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 0;
+    padding-left: 10px;
+
+}
+
+.header__nav{
+
+    font-family: 'Bebas Neue', cursive;
+    padding-right: 130px;
+
+}
+
+#check-nav{
 
     display: none;
 
@@ -76,16 +145,16 @@ img {
 
     display: none;
     position: relative;
-    font-size: 30px;
+    font-size: 1.7rem;
     cursor: pointer;
 
 }
 
 .nav__ulist{
 
-    position: relative;
     font-size: 0;
-    top: 28px;
+    padding: 0;
+    margin: 0;
 
 }
 
@@ -97,14 +166,14 @@ img {
 
 .nav__ulist__item__a{
 
-    color: #000000;
-    font-size: 18px;   
+    font-size: 1.2rem;   
     text-align: center;
+    text-decoration: none;
     padding: 10px 15px;
 
 }
 
-.nav__ulist__item__a:hover, .nav__ulist__item__ulist__item__a:hover{
+.nav__ulist__item__a:hover{
 
     background-color: #ff9800;
     color: #ffffff;
@@ -112,48 +181,17 @@ img {
 
 }
 
-.header__box__logo{
+.header__box--btn{
 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: flex-start;
-
-}
-
-.header__logo{
-
-    position: relative;
-    width: 95px;
-    bottom: 42px; 
-    margin: 10px;
-    
-}
-
-.header__title{
-
-    position: relative;
-    font-size: 25px;
-    font-family: 'Bebas Neue', cursive;
-
-}
-
-.header__box__btn{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
+    align-self: center;
 
 }
 
 .header__btn{
 
-    position: relative;
-    font-size: 30px;
-    right: 40px;
-    bottom: 120px;
+    font-size: 2rem;
     cursor: pointer;
+    padding-right: 25px;
 
 }
 
@@ -164,53 +202,53 @@ img {
 
 /* Diseño de la Pagina Principal */
 
+.grid-presentation{
+
+    grid-area: content-0;
+    display: grid;
+    grid: repeat(3, 2fr) / 1fr 1fr;
+    grid-template-areas: 
+    "content0 content1"
+    "content2 content3"
+    "content4 content5";
+
+}
+
 .section__presentation{
 
     grid-area: content0;
+    display: flex;
     background-image: url("../assets/imagenes/presentacion.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 50% 100%;
-    width: 680px;
-    height: 563px;
+    background-size: 50vw 100%;
+    width: 50vw;
+    height: 35.2rem;
 
 }
 
 .section__presentation__f{
 
     grid-area: content1;
-    display: flex;   
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50vw;
 
 }
 
-.section__presentation__f__title{
+.section__presentation__f h1{
 
     font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
+    font-size: 3rem;
 
 }
 
 .section__presentation__f__subtitle{
 
     font-family: 'Bebas Neue', cursive;
-    font-size: 35px;
-
-}
-
-.section__presentation__2{
-
-    grid-area: content3;
-    display: flex;
-    background-image: url("../assets/imagenes/suadero.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 675px;
-    background-size: 50% 100%;
-    width: 1350px;
-    height: 563px;
+    font-size: 2rem;
 
 }
 
@@ -221,20 +259,35 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50vw;
 
 }
 
-.section__presentation__2__s__title{
+.section__presentation__2__s h1{
 
     font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
+    font-size: 3rem;
 
 }
 
-.section__presentation__2__s__subtitle{
+.section__presentation__2__s h2{
 
     font-family: 'Bebas Neue', cursive;
-    font-size: 35px;
+    font-size: 2rem;
+
+}
+
+.section__presentation__2{
+
+    grid-area: content3;
+    display: flex;
+    background-image: url("../assets/imagenes/suadero.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50vw 100%;
+    width: 50vw;
+    height: 35.2rem;
 
 }
 
@@ -243,10 +296,10 @@ img {
     grid-area: content4;
     background-image: url("../assets/imagenes/pastor.jpg");
     background-repeat: no-repeat;
-    background-size: 50% 100%;
+    background-size: 50vw 100%;
     background-attachment: fixed;
-    width: 680px;
-    height: 563px;
+    width: 50vw;
+    height: 35.2rem;
 
 }
 
@@ -257,26 +310,28 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50vw;
 
 }
 
-.section__presentation__3__t__title{
+.section__presentation__3__t h1{
 
     font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
+    font-size: 3rem;
 
 }
 
-.section__presentation__3__t__subtitle{
+.section__presentation__3__t h2{
 
     font-family: 'Bebas Neue', cursive;
-    font-size: 35px;
+    font-size: 2rem;
 
 }
 
 .section__presentation__f__subtitle__a{
 
     color: #00098a;
+    text-decoration: none;
 
 }
 
@@ -379,6 +434,7 @@ img {
 .box__section__product__5 h3,
 .box__section__product__6 h3 {
 
+    color: #000000;
     font-size: 1.2rem;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
@@ -494,7 +550,7 @@ img {
 
 }
 
-.section__us{
+.main__us{
 
     grid-area: content0;
     display: flex;
@@ -513,69 +569,6 @@ img {
     "hd con3 con4";
     padding: 80px 0;
     
-}
-
-.box__section__product__1 h2,
-.box__section__product__2 h2,
-.box__section__product__3 h2,
-.box__section__product__4 h2,
-.box__section__product__5 h2,
-.box__section__product__6 h2,
-.box__section__product__1 h4,
-.box__section__product__2 h4,
-.box__section__product__3 h4,
-.box__section__product__4 h4,
-.box__section__product__5 h4,
-.box__section__product__6 h4,
-.box__section__us a, 
-.check__2 label a,
-.footer__ulist__legal__item__a {
-
-    color: #000000;
-
-}
-
-.section__presentation__f__subtitle__a:hover,
-.box__section__product__1 a h2:hover,
-.box__section__product__2 h2:hover,
-.box__section__product__3 h2:hover,
-.box__section__product__4 h2:hover,
-.box__section__product__5 h2:hover,
-.box__section__product__6 h2:hover,
-.box__section__product__1 h4:hover,
-.box__section__product__2 h4:hover,
-.box__section__product__3 h4:hover,
-.box__section__product__4 h4:hover,
-.box__section__product__5 h4:hover,
-.box__section__product__6 h4:hover,
-.box__section__us a h3:hover, 
-.check__2 label a:hover,
-.box__section__info__2__list-a:hover, 
-.box__section__info__2__page-a:hover,
-.footer__ulist__legal__item__a:hover {
-
-    animation-duration: 1s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
-
-}
-
-@keyframes aparecer {
-
-    0% {
-
-        color: #ffffff;
-        opacity: 0;
-
-    }
-
-    100% {
-
-        color: #ffffff;
-        opacity: 1;
-
-    }
-
 }
 
 .box__section__us__0{
@@ -746,6 +739,49 @@ img {
 
 }
 
+.section__presentation__f__subtitle__a:hover,
+.box__section__product__1 a h2:hover,
+.box__section__product__2 h2:hover,
+.box__section__product__3 h2:hover,
+.box__section__product__4 h2:hover,
+.box__section__product__5 h2:hover,
+.box__section__product__6 h2:hover,
+.box__section__product__1 h4:hover,
+.box__section__product__2 h4:hover,
+.box__section__product__3 h4:hover,
+.box__section__product__4 h4:hover,
+.box__section__product__5 h4:hover,
+.box__section__product__6 h4:hover,
+.box__section__us a h3:hover, 
+.check__2 label a:hover,
+.box__section__info__2__list-a:hover, 
+.box__section__info__2__page-a:hover,
+.footer__ul--leg li a:hover {
+
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes aparecer {
+
+    0% {
+
+        color: #ffffff;
+        opacity: 0;
+
+    }
+
+    100% {
+
+        color: #ffffff;
+        opacity: 1;
+
+    }
+
+}
+
 /* Fin del Diseño de la Página de Nosotros */
 
 
@@ -794,7 +830,7 @@ img {
     justify-content: center;
     font-size: 3.5rem;
     font-family: 'Bebas Neue', cursive;
-    padding: 20px;
+    padding: 70px 0 20px 0;
 
 }
 
@@ -945,6 +981,12 @@ img {
 .box__section__contact__form form{
 
     padding: 30px;
+
+}
+
+.box__section__contact__form form p{
+
+    margin-bottom: 0;
 
 }
 
@@ -1102,6 +1144,12 @@ img {
 
 }
 
+.box__section__info__2 ul{
+
+    padding: 0;
+
+}
+
 /* Fin del Diseño de la Página de Contacto */
 
 
@@ -1121,69 +1169,60 @@ img {
 
 }
 
-.footer__ulist__sn{
+.footer__ul--sn{
 
     display: flex;
-    top: auto;
     justify-content: center; 
-    padding: 20px;
+    padding: 30px 0 30px 0;
 
 }
 
-.footer__ulist__sn__item{
+.footer__ul--sn li{
 
-    display: flex;
-    width: 6%;
+    width: 5%;
     
 }
 
-.footer__ulist__sn__item__img{
+.footer__ul--sn li a i{
 
-    width: 50px;
-
-}
-
-.footer__ulist__sn__item__img-size{
-
-    width: 54px;
+    color: #00098a;
+    font-size: 2rem;
 
 }
 
-.footer__ulist__legal{
+.footer__ul--leg{
 
     display: flex;
     justify-content: center;
-    padding: 20px;
+    text-decoration: none;
 
 }
 
-.footer__ulist__legal__item{
+.footer__ul--leg li{
 
-    width: 16%;
+    width: 15%;
     font-family: 'Bebas Neue', cursive;
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 30px;
+    font-size: 1.8rem;
 
 }
 
-.footer__legal{
+.footer--leg1, 
+.footer--leg2 {
 
     display: flex;
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 20px;
+    font-size: 1.3rem;
     justify-content: center;
-    padding: 20px 20px 0 0;
+    margin-bottom: 0;
+    padding: 20px 0 0 0;
 
 }
 
-.footer__legal2{
+.footer--leg2{
 
-    display: flex;
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 20px;
-    justify-content: center;
-    padding: 0 20px 20px 0;
-
+    padding: 0 0 20px 0;
+    
 }
 
 /* Fin del Diseño del Footer para Todas las Paginas */
@@ -1226,19 +1265,22 @@ img {
 
 @media screen and (max-width: 1000px){
 
-    
-
     .header{
 
-        background-color: #f57c00;
-        width: 100vw;
         grid-area: header;
+        background-color: #f57c00;
     
     }
 
-    .section__presentation__2{
+    .header__title{
 
-        background-position: 470px;
+        font-size: 1.3rem;
+
+    }
+
+    .nav__ulist__item__a{
+
+        font-size: 1rem;
 
     }
 
@@ -1365,15 +1407,15 @@ img {
 
     }   
 
-    .footer__ulist__sn__item{
+    .footer__ul--sn li{
 
         width: 8%;
 
     }
 
-    .footer__legal, .footer__legal2{
+    .footer--leg1, .footer--leg2{
 
-        font-size: 16px;
+        font-size: 1rem;
 
     }
 
@@ -1381,83 +1423,41 @@ img {
 
 /* Fin del Media para tablet grande del Index */
 
-/* Media de Ajuste Index */
+/* Media de Ajuste */
 
 @media screen and (max-width: 724px) {
-    
-    .nav__ulist{
-
-        top: 31px;
-
-    }
 
     .nav__ulist__item__a{
 
-        font-size: 15px;
         padding: 10px 10px;
 
     }
 
     .header__logo{
 
-        width: 80px;
-        bottom: 28px;
-        margin: 8px;
+        width: 4rem;
 
     }
 
-    .header__title{
+    .header__nav{
 
-        font-size: 20px;
-        top: 9px;
-
-    }
-
-    .header__btn{
-
-        bottom: 95px;
+        padding-right: 70px;
 
     }
 
-    .section__presentation__f__title{
+    .section__presentation__f h1,
+    .section__presentation__2__s h1,
+    .section__presentation__3__t h1 {
 
-        font-size: 40px;
-
-    }
-
-    .section__presentation__f__subtitle{
-
-        font-size: 25px;
+        font-size: 2.5rem;
 
     }
 
-    .section__presentation__2{
+    .section__presentation__f h2,
+    .section__presentation__2__s h2,
+    .section__presentation__3__t h3 {
 
-        background-position: 360px;
-
-    }
-
-    .section__presentation__2__s__title{
-
-        font-size: 40px;
-
-    }
-
-    .section__presentation__2__s__subtitle{
-
-        font-size: 25px;
-
-    }
-
-    .section__presentation__3__t__title{
-
-        font-size: 40px;
-
-    }
-
-    .section__presentation__3__t__subtitle{
-
-        font-size: 25px;
+        font-size: 1.5rem;
 
     }
 
@@ -1576,7 +1576,9 @@ img {
 
     }
 
-    .box__section__contact__form, .box__section__contact__form__input, .check__1 label, .check__2 label{
+    .box__section__contact__form, 
+    .box__section__contact__form__input, 
+    .check__1 label, .check__2 label {
 
         font-size: 10px;
 
@@ -1618,21 +1620,21 @@ img {
 
     }
 
-    .footer__ulist__sn__item{
+    .footer__ul--sn li{
 
-        width: 11%;
+        width: 12%;
 
     }
 
-    .footer__ulist__legal__item{
+    .footer__ul--leg li{
 
         font-size: 25px;
 
     }
 
-    .footer__legal, .footer__legal2{
+    .footer--leg1, .footer--leg2{
 
-        font-size: 13px;
+        font-size: .9rem;
 
     }
 
@@ -1644,33 +1646,15 @@ img {
 
 @media screen and (max-width: 600px){
 
-    .grid-index{
-        display: grid;
-        width: 100vw;
-        height: 100vh;
-        grid: 80px 380px 250px 380px 250px 380px 250px 100px / 100%;
-        grid-template-areas: 
-        "header"
-        "content0"
-        "content1"
-        "content2"
-        "content3"
-        "content4"
-        "content5"
-        "footer";  
-    }
+    .nav__ulist{
 
-    .nav{
-
-        display: flex;
         z-index: 3;
         
     }
 
     .nav__btn{
 
-        display: block;
-        top: 20px;
+        display: flex;
 
     }
 
@@ -1699,26 +1683,17 @@ img {
 
     .nav__ulist__item__a{
 
-        font-size: 30px;
+        font-size: 2rem;
 
     }
 
-    #nav__check:checked ~ .nav__ulist{
+    #check-nav:checked ~ .nav__ulist{
 
         left: 0;
 
     }
 
-    .header__box__logo{
-
-        display: flex;
-        position: relative;
-        justify-content: flex-start;
-        bottom: 23px;
-
-    }
-
-    .header__title{
+    .header__box--logo h1{
 
         display: none;
 
@@ -1726,52 +1701,71 @@ img {
 
     .header__btn{
 
-        font-size: 29px;
-        bottom: 120px;
+        font-size: 1.7rem;
+
+    }
+
+    .grid-presentation{
+        
+        display: grid;
+        grid: 19% 14% 19% 14% 19% 14% 1% / 1fr;
+        grid-template-areas: 
+        "content_0" 
+        "content_1"
+        "content_2" 
+        "content_3"
+        "content_4" 
+        "content_5"
+        ".";
 
     }
 
     .section__presentation{
 
-        grid-area: content0;
-        background-size: 100vw;
+        grid-area: content_0;
+        background-size: 100vw 67%;
         background-attachment: scroll;
-    
+        width: 100vw;
 
     }
 
     .section__presentation__f{
 
-        grid-area: content1;
+        grid-area: content_1;
+        width: 100vw;
 
     }
 
     .section__presentation__2{
 
-        grid-area: content2;
-        background-size: 100vw 68%;
+        grid-area: content_2;
+        background-size: 100vw 67%;
         background-attachment: scroll;
         background-position: 0% 0%;
+        width: 100vw;
 
     }
 
     .section__presentation__2__s{
 
-        grid-area: content3;
+        grid-area: content_3;
+        width: 100vw;
 
     }
 
     .section__presentation__3{
 
-        grid-area: content4;
-        background-size: 100vw 68%;
+        grid-area: content_4;
+        background-size: 100vw 67%;
         background-attachment: scroll;
+        width: 100vw;
 
     }
 
     .section__presentation__3__t{
 
-        grid-area: content5;
+        grid-area: content_5;
+        width: 100vw;
 
     }
 
@@ -1821,21 +1815,21 @@ img {
 
     }
 
-    .footer__ulist__sn__item{
+    .footer__ul--sn li{
 
         width: 14%;
 
     }
 
-    .footer__ulist__legal__item{
+    .footer__ul--leg li{
 
-        font-size: 19px;
+        font-size: .9rem;
 
     }
 
-    .footer__legal, .footer__legal2{
+    .footer--leg1, .footer--leg2{
 
-        font-size: 10px;
+        font-size: .6rem;
 
     }
 
@@ -2099,6 +2093,176 @@ img {
               transform: scale(1);
       -webkit-animation-timing-function: ease-out;
               animation-timing-function: ease-out;
+    }
+  }
+  
+.slit-in-diagonal-1 {
+	-webkit-animation: slit-in-diagonal-1 0.45s ease-out both;
+	        animation: slit-in-diagonal-1 0.45s ease-out both;
+}
+
+@-webkit-keyframes slit-in-diagonal-1 {
+    0% {
+      -webkit-transform: translateZ(-800px) rotate3d(1, 1, 0, 90deg);
+              transform: translateZ(-800px) rotate3d(1, 1, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    54% {
+      -webkit-transform: translateZ(-160px) rotate3d(1, 1, 0, 87deg);
+              transform: translateZ(-160px) rotate3d(1, 1, 0, 87deg);
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(0) rotate3d(1, 1, 0, 0);
+              transform: translateZ(0) rotate3d(1, 1, 0, 0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+@keyframes slit-in-diagonal-1 {
+    0% {
+      -webkit-transform: translateZ(-800px) rotate3d(1, 1, 0, 90deg);
+              transform: translateZ(-800px) rotate3d(1, 1, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    54% {
+      -webkit-transform: translateZ(-160px) rotate3d(1, 1, 0, 87deg);
+              transform: translateZ(-160px) rotate3d(1, 1, 0, 87deg);
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(0) rotate3d(1, 1, 0, 0);
+              transform: translateZ(0) rotate3d(1, 1, 0, 0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+
+.tilt-in-left-1 {
+	-webkit-animation: tilt-in-left-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-left-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes tilt-in-left-1 {
+    0% {
+      -webkit-transform: rotateX(-30deg) translateX(-300px) skewX(-30deg);
+              transform: rotateX(-30deg) translateX(-300px) skewX(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+              transform: rotateX(0deg) translateX(0) skewX(0deg);
+      opacity: 1;
+    }
+  }
+@keyframes tilt-in-left-1 {
+    0% {
+      -webkit-transform: rotateX(-30deg) translateX(-300px) skewX(-30deg);
+              transform: rotateX(-30deg) translateX(-300px) skewX(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+              transform: rotateX(0deg) translateX(0) skewX(0deg);
+      opacity: 1;
+    }
+  }
+
+.tilt-in-right-1 {
+	-webkit-animation: tilt-in-right-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-right-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes tilt-in-right-1 {
+    0% {
+      -webkit-transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+              transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+              transform: rotateX(0deg) translateX(0) skewX(0deg);
+      opacity: 1;
+    }
+  }
+@keyframes tilt-in-right-1 {
+    0% {
+      -webkit-transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+              transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+              transform: rotateX(0deg) translateX(0) skewX(0deg);
+      opacity: 1;
+    }
+  }
+  
+.tilt-in-top-1 {
+	-webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes tilt-in-top-1 {
+    0% {
+      -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+              transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+              transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
+@keyframes tilt-in-top-1 {
+    0% {
+      -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+              transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+              transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
+  
+.tilt-in-bottom-1 {
+	-webkit-animation: tilt-in-bottom-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-bottom-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes tilt-in-bottom-1 {
+    0% {
+      -webkit-transform: rotateY(30deg) translateY(300px) skewY(-30deg);
+              transform: rotateY(30deg) translateY(300px) skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+              transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
+@keyframes tilt-in-bottom-1 {
+    0% {
+      -webkit-transform: rotateY(30deg) translateY(300px) skewY(-30deg);
+              transform: rotateY(30deg) translateY(300px) skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+              transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
     }
   }
   

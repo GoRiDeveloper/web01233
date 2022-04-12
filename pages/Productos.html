@@ -18,157 +18,156 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Display&display=swap" rel="stylesheet">
 
+        <!-- Bootstrap local CSS -->
+        <link rel="stylesheet" href="../css/Bootstrap-5.1.3/bootstrap.css">
         <link rel="shortcut icon" href="../assets/imagenes/taquito.png">
         <link rel="stylesheet" href="../css/style.css">
-
-        <script src="https://kit.fontawesome.com/9a70094236.js" crossorigin="anonymous"></script>
 
         <title> Mr. Tacos. </title>
 
     </head>
-    <body>
-        <div class="grid-product">
+    <body class="grid-product">
 
-            <!-- Fila del Nombre, Logo y El Nav --> 
+        <!-- Fila del Nombre, Logo y El Nav --> 
 
-            <header class="header">
+        <header class="header">
 
-                <div class="box__nav">
+            <div class="header__box--logo">
 
-                    <nav class="nav">
+                <a href="../index.html"><img class="slit-in-diagonal-1 heartbeat" src="../assets/imagenes/taquito.png" alt="page-logo"></a> 
+                <h1 class="text-focus-in"> Mr. Tacos </h1>
 
-                        <input type="checkbox" id="nav__check">
-                        <label for="nav__check" class="nav__btn"><i class="fa-solid fa-bars"></i></label>
+            </div>
 
-                        <ul class="nav__ulist">
+            <nav class="header__nav">
 
-                            <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="#"> Producto </a></li>
-                            <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="../pages/Nosotros.html"> Nosotros </a></li>
-                            <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="../pages/Ubicacion.html"> Ubicacion </a></li>
-                            <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="../pages/Contacto.html"> Contacto </a></li>
+                <input type="checkbox" id="check-nav">
+                <label for="check-nav" class="nav__btn"><i class="fa-solid fa-bars"></i></label>
 
-                        </ul>
+                <ul class="nav__ulist">
 
-                    </nav>
+                    <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="#"> Producto </a></li>
+                    <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="../pages/Nosotros.html"> Nosotros </a></li>
+                    <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="../pages/Ubicacion.html"> Ubicacion </a></li>
+                    <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="../pages/Contacto.html"> Contacto </a></li>
 
-                </div>
+                </ul>
 
-                <div class="header__box__logo">
+            </nav>
 
-                    <a href="../index.html"><img class="header__logo" src="../assets/imagenes/taquito.png" alt="page-logo"></a> 
-                    <h1 class="header__title"> Mr. Tacos </h1>
+            <div class="header__box--btn">
 
-                </div>
+                <span class="header__btn"><i class="fa-solid fa-cart-shopping tilt-in-right-1"></i></span>
 
-                <div class="header__box__btn">
+            </div>
 
-                    <span class="header__btn"><i class="fa-solid fa-cart-shopping"></i></span>
-
-                </div>
-
-            </header>
+        </header>
         
 
-            <!-- Se cierra la Fila del Nombre, Logo y El Nav -->
-            <!-- Fila de Imágenes de los Productos -->
+        <!-- Se cierra la Fila del Nombre, Logo y El Nav -->
+        <!-- Fila de Imágenes de los Productos -->
 
-            <section class="section__product">
+        <section class="section__product">
 
-                <div class="box__section__product">
+            <div class="box__section__product">
 
-                    <div class="box__section__product__title">
+                <div class="box__section__product__title">
 
-                        <h1 class="text-focus-in"> Productos. </h1>
-
-                    </div>
-                
-                    <div class="box__section__product__1 shadow-drop-2-center">
-
-                        <a href="#"><img src="../assets/imagenes/presentacion.jpg" alt="pro-1"></a>
-                        <a href="#"><h2> Taco de Barbacoa </h2></a>
-                        <h3> Taco preparado con carne de borrego carnero o res, cilantro y cebolla. </h3>
-                        <a href="#"><h4> Agregar al Carrito </h4></a>
-
-                    </div>
-
-                    <div class="box__section__product__2 shadow-drop-2-center">
-
-                        <a href="#"><img src="../assets/imagenes/suadero.jpg" alt="pro-2"></a>
-                        <a href="#"><h2> Taco de Suadero </h2></a>
-                        <h3> Taco preparado con suadero (carne de vaca) cilantro y cebolla. </h3>
-                        <a href="#"><h4> Agregar al Carrito </h4></a>
-
-                    </div>
-
-                    <div class="box__section__product__3 shadow-drop-2-center">
-
-                        <a href="#"><img src="../assets/imagenes/bistec.jpg" alt="pro-3"></a>
-                        <a href="#"><h2> Taco de Bistec </h2></a>
-                        <h3> Taco preparado con Bistec de res, cilantro y cebolla. </h3>
-                        <a href="#"><h4> Agregar al Carrito </h4></a>
-                            
-                    </div>
-
-                    <div class="box__section__product__4 shadow-drop-2-center">
-
-                        <a href="#"><img src="../assets/imagenes/pastor.jpg" alt="pro-4"></a>
-                        <a href="#"><h2> Taco al Pastor </h2></a>
-                        <h3> Taco preparado con carne de cerdo adobada, piña, cilantro y cebolla. </h3>
-                        <a href="#"><h4> Agregar al Carrito </h4></a>
-
-                    </div>
-
-                    <div class="box__section__product__5 shadow-drop-2-center">
-
-                        <a href="#"><img src="../assets/imagenes/pollo.jpg" alt="pro-5"></a>
-                        <a href="#"><h2> Taco de Pollo </h2></a>
-                        <h3> Taco preparado con pechuga de pollo, jitomate, cilantro y cebolla. </h3>
-                        <a href="#"><h4> Agregar al Carrito </h4></a>
-
-                    </div>
-
-                    <div class="box__section__product__6 shadow-drop-2-center">
-
-                        <a href="#"><img src="../assets/imagenes/vegano.jpg" alt="pro-6"></a>
-                        <a href="#"><h2> Taco Vegano </h2></a>
-                        <h3> Taco preparado con soja texturizada, pimientos, cilantro y cebolla. </h3>
-                        <a href="#"><h4> Agregar al Carrito </h4></a>
-
-                    </div>
+                    <h1 class="text-focus-in"> Productos. </h1>
 
                 </div>
                 
-            </section>
+                <div class="box__section__product__1 shadow-drop-2-center tilt-in-left-1">
 
-            <!-- Se cierra la Fila de Imágenes de los Productos -->
-            <!-- Inicio del Footer -->
+                    <a href="#"><img src="../assets/imagenes/presentacion.jpg" alt="pro-1"></a>
+                    <a href="#"><h2> Taco de Barbacoa </h2></a>
+                    <h3> Taco preparado con carne de borrego carnero o res, cilantro y cebolla. </h3>
+                    <a href="#"><h4> Agregar al Carrito </h4></a>
 
-            <footer class="footer">
+                </div>
 
-                <ul class="footer__ulist__sn">
+                <div class="box__section__product__2 shadow-drop-2-center tilt-in-top-1">
 
-                    <li class="footer__ulist__sn__item"><a href="https://www.facebook.com/" target="_blank"><img class="footer__ulist__sn__item__img-size heartbeat" src="../assets/imagenes/facebook-icon.png" alt="facebook-logo"></a></li>
-                    <li class="footer__ulist__sn__item"><a href="https://twitter.com/" target="_blank"><img class="footer__ulist__sn__item__img heartbeat" src="../assets/imagenes/twitter-icon.png" alt="twitter-logo"></a></li>
-                    <li class="footer__ulist__sn__item"><a href="https://www.instagram.com/" target="_blank"><img class="footer__ulist__sn__item__img heartbeat" src="../assets/imagenes/instagram-icon.png" alt="instagram-logo"></a></li>
-                    <li class="footer__ulist__sn__item"><a href="https://www.youtube.com/" target="_blank"><img class="footer__ulist__sn__item__img heartbeat" src="../assets/imagenes/youtube-icon.png" alt="youtube-logo"></a></li>
+                    <a href="#"><img src="../assets/imagenes/suadero.jpg" alt="pro-2"></a>
+                    <a href="#"><h2> Taco de Suadero </h2></a>
+                    <h3> Taco preparado con suadero (carne de vaca) cilantro y cebolla. </h3>
+                    <a href="#"><h4> Agregar al Carrito </h4></a>
 
-                </ul>
+                </div>
 
-                <ul class="footer__ulist__legal">
+                <div class="box__section__product__3 shadow-drop-2-center tilt-in-right-1">
 
-                    <li class="footer__ulist__legal__item"><a class="footer__ulist__legal__item__a" href="#"> Aviso Legal </a></li>
-                    <li class="footer__ulist__legal__item"><a class="footer__ulist__legal__item__a" href="#"> Privacidad </a></li>
-                    <li class="footer__ulist__legal__item"><a class="footer__ulist__legal__item__a" href="#"> Terminos y Condiciones </a></li>
+                    <a href="#"><img src="../assets/imagenes/bistec.jpg" alt="pro-3"></a>
+                    <a href="#"><h2> Taco de Bistec </h2></a>
+                    <h3> Taco preparado con la parte de Bistec del res, cilantro y cebolla. </h3>
+                    <a href="#"><h4> Agregar al Carrito </h4></a>
+                            
+                </div>
 
-                </ul>
+                <div class="box__section__product__4 shadow-drop-2-center tilt-in-left-1">
 
-                    <p class="footer__legal"> Todos los artículos están sujetos a disponibilidad. El diseño de MR. TACO y las marcas relacionadas son marcas registradas de MR. TACO Corp </p>
-                    <p class="footer__legal2"> Autor : Govanni Gonzalez Rivera © 2022 MR. TACO Corp, todos los derechos reservados. </p>
+                    <a href="#"><img src="../assets/imagenes/pastor.jpg" alt="pro-4"></a>
+                    <a href="#"><h2> Taco al Pastor </h2></a>
+                    <h3> Taco preparado con carne de cerdo adobada, piña, cilantro y cebolla. </h3>
+                    <a href="#"><h4> Agregar al Carrito </h4></a>
 
-            </footer>
+                </div>
+
+                <div class="box__section__product__5 shadow-drop-2-center tilt-in-bottom-1">
+
+                    <a href="#"><img src="../assets/imagenes/pollo.jpg" alt="pro-5"></a>
+                    <a href="#"><h2> Taco de Pollo </h2></a>
+                    <h3> Taco preparado con pechuga de pollo, jitomate, cilantro y cebolla. </h3>
+                    <a href="#"><h4> Agregar al Carrito </h4></a>
+
+                </div>
+
+                <div class="box__section__product__6 shadow-drop-2-center tilt-in-right-1">
+
+                    <a href="#"><img src="../assets/imagenes/vegano.jpg" alt="pro-6"></a>
+                    <a href="#"><h2> Taco Vegano </h2></a>
+                    <h3> Taco preparado con soja texturizada, pimientos, cilantro y cebolla. </h3>
+                    <a href="#"><h4> Agregar al Carrito </h4></a>
+
+                </div>
+
+            </div>
+                
+        </section>
+
+        <!-- Se cierra la Fila de Imágenes de los Productos -->
+        <!-- Inicio del Footer -->
+
+        <footer class="footer">
+
+            <ul class="footer__ul--sn">
+
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f heartbeat"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter heartbeat"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram heartbeat"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube heartbeat"></i></a></li>
+
+            </ul>
+
+            <ul class="footer__ul--leg">
+
+                <li><a href="#"> Aviso Legal </a></li>
+                <li><a href="#"> Privacidad </a></li>
+                <li><a href="#"> Terminos y Condiciones </a></li>
+
+            </ul>
+
+                <p class="footer--leg1"> Todos los artículos están sujetos a disponibilidad. El diseño de MR. TACO y las marcas relacionadas son marcas registradas de MR. TACO Corp </p> 
+                <p class="footer--leg2"> Autor : Govanni Gonzalez Rivera © 2022 MR. TACO Corp, todos los derechos reservados. </p>
+
+        </footer>
             
-            <!-- Cierre del Footer -->
+        <!-- Cierre del Footer -->
+        
+        <!-- Bootstrap local JS -->
+        <script src="js/Bootstrap-5.1.3/bootstrap.js"></script>
+        <!-- Iconos Script -->
+        <script src="https://kit.fontawesome.com/9a70094236.js" crossorigin="anonymous"></script>
 
-        </div>
     </body>
 </html>
