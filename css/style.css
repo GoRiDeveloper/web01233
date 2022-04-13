@@ -33,6 +33,12 @@ img {
 
 }
 
+ol, ul{
+
+    padding-left: 0;
+
+}
+
 a{
 
     text-decoration: none;
@@ -245,7 +251,7 @@ a{
 
 }
 
-.section__presentation__f__subtitle{
+.section__presentation__f h2{
 
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
@@ -328,7 +334,9 @@ a{
 
 }
 
-.section__presentation__f__subtitle__a{
+.section__presentation__f h2 a,
+.section__presentation__2__s h2 a,
+.section__presentation__3__t h2 a {
 
     color: #00098a;
     text-decoration: none;
@@ -739,7 +747,9 @@ a{
 
 }
 
-.section__presentation__f__subtitle__a:hover,
+.section__presentation__f h2 a:hover,
+.section__presentation__2__s h2 a:hover,
+.section__presentation__3__t h2 a:hover,
 .box__section__product__1 a h2:hover,
 .box__section__product__2 h2:hover,
 .box__section__product__3 h2:hover,
@@ -1033,6 +1043,7 @@ a{
     cursor: pointer;
 
 }
+
 .submit:hover{
 
     background-color: #ff9800;
@@ -1050,7 +1061,7 @@ a{
 
 }
 
-.check__1 input .check__2 input{
+.check__1 input, .check__2 input{
 
     font-size: 6px;
 
@@ -1216,6 +1227,7 @@ a{
     justify-content: center;
     margin-bottom: 0;
     padding: 20px 0 0 0;
+    padding-left: 0;
 
 }
 
@@ -1226,6 +1238,7 @@ a{
 }
 
 /* Fin del Diseño del Footer para Todas las Paginas */
+
 
 
 
@@ -1392,7 +1405,10 @@ a{
 
     }
 
-    .box__section__contact__form, .box__section__contact__form__input, .check__1 label, .check__2 label{
+    .box__section__contact__form, 
+    .box__section__contact__form__input, 
+    .check__1 label, 
+    .check__2 label {
 
         font-size: 14px;
 
@@ -1455,9 +1471,9 @@ a{
 
     .section__presentation__f h2,
     .section__presentation__2__s h2,
-    .section__presentation__3__t h3 {
+    .section__presentation__3__t h2 {
 
-        font-size: 1.5rem;
+        font-size: 2rem;
 
     }
 
@@ -1726,6 +1742,7 @@ a{
         background-size: 100vw 67%;
         background-attachment: scroll;
         width: 100vw;
+        height: 28rem;
 
     }
 
@@ -1743,6 +1760,7 @@ a{
         background-attachment: scroll;
         background-position: 0% 0%;
         width: 100vw;
+        height: 28rem;
 
     }
 
@@ -1759,6 +1777,7 @@ a{
         background-size: 100vw 67%;
         background-attachment: scroll;
         width: 100vw;
+        height: 28rem;
 
     }
 
