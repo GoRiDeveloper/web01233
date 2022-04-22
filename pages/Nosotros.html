@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
 
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
 
+        <!-- Fuentes Importadas -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -18,133 +15,144 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Display&display=swap" rel="stylesheet">
 
-        <!-- Bootstrap local CSS -->
-        <link rel="stylesheet" href="../css/Bootstrap-5.1.3/bootstrap.css">
-        <link rel="shortcut icon" href="../assets/imagenes/taquito.png">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../assets/img/page-logo.png">
+        <link rel="stylesheet" href="../assets/css/style.css">
 
         <title> Mr. Tacos. </title>
 
     </head>
     <body class="grid-us">
+        
+        <header>
 
-        <!-- Fila del Nombre, Logo y El Nav --> 
+            <div class="header__logo">
 
-        <header class="header">
-
-            <div class="header__box--logo">
-
-                <a href="../index.html"><img class="slit-in-diagonal-1 heartbeat" src="../assets/imagenes/taquito.png" alt="page-logo"></a> 
-                <h1 class="text-focus-in"> Mr. Tacos </h1>
+                <a href="../index.html"><img class="slit-in-diagonal-1" src="../assets/img/page-logo.png" alt="page-logo"></a>
+                <a href="../index.html"><h1 class="text-focus-in"> Mr. Tacos </h1></a>
 
             </div>
 
-            <nav class="header__nav">
+            <div class="header__nav">
 
-                <input type="checkbox" id="check-nav">
-                <label for="check-nav" class="nav__btn"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" name="check" id="check__nav">
+                <label id="label__nav" for="check__nav"><i class="fa-solid fa-bars icon__nav"></i></label>
 
-                <ul class="nav__ulist">
+                <nav>
 
-                    <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="../pages/Productos.html"> Producto </a></li>
-                    <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="#"> Nosotros </a></li>
-                    <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="../pages/Ubicacion.html"> Ubicacion </a></li>
-                    <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="../pages/Contacto.html"> Contacto </a></li>
+                    <ul>
 
-                </ul>
+                        <li><a href="./Productos.html"> Productos </a></li>
+                        <li><a href="#"> Nosotros </a></li>
+                        <li><a href="./Ubicacion.html"> Ubicacion </a></li>
+                        <li><a href="./Contacto.html"> Contacto </a></li>
 
-            </nav>
+                    </ul>
 
-            <div class="header__box--btn">
+                </nav>
 
-                <span class="header__btn"><i class="fa-solid fa-cart-shopping tilt-in-right-1"></i></span>
+            </div>
+
+            <div>
+
+                <span class="header__btn">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                </span>
 
             </div>
 
         </header>
-        
 
-        <!-- Se cierra la Fila del Nombre, Logo y El Nav -->
-        <!-- Fila de Imágenes e Información sobre la Página de Nosotros -->
+        <main class="main-us">
 
-        <section class="main__us">
+            <section class="section__us">
 
-            <div class="box__section__us">
+                <article class="article__us">
 
-                <div class="box__section__us__0">
+                    <a href="../index.html">
+                        <img class="slit-in-diagonal-1" src="../assets/img/page-logo.png" alt="page-logo">
+                        <h1 class="text-focus-in"> Mr. Tacos </h1>
+                    </a>
 
-                    <a href="../index.html"><img class="slit-in-diagonal-1 heartbeat" src="../assets/imagenes/taquito.png" alt="logo-page"></a>
-                    <h2> Mr. Tacos </h2>
+                </article>
 
-                </div>
+                <article class="article__us-1">
 
-                <div class="box__section__us__1">
-
-                    <a href="#"><img class="scale-up-center heartbeat" src="../assets/imagenes/nosotros1.png" alt="us-logo"></a>
-                    <a href="#"><h3> Noticias </h3></a>
+                    <a href="#">
+                        <img src="../assets/img/us-img.png" alt="us-logo-1">
+                        <h2 class="text-focus-in"> Noticias </h2>
+                    </a>
                     <p> Enterate de todas las últimas noticias e iniciativas sobre nosotros. </p>
 
-                </div>
+                </article>
 
-                <div class="box__section__us__2">
+                <article class="article__us-2">
 
-                    <a href="../pages/Contacto.html"><img class="scale-up-center heartbeat" src="../assets/imagenes/contacto.png" alt="contact-logo"></a>
-                    <a href="../pages/Contacto.html"><h3> Contacto </h3></a>
+                    <a href="./Contacto.html">
+                        <img src="../assets/img/contact-img.png" alt="us-logo-2">
+                        <h2 class="text-focus-in"> Contacto </h2>
+                    </a>
                     <p> Contacta con nosotros para mejorar todo nuestro equipo y servicio para ti. </p>
 
-                </div>
+                </article>
 
-                <div class="box__section__us__3">
+                <article class="article__us-3">
 
-                    <a href="#"><img class="scale-up-center heartbeat" src="../assets/imagenes/novedad.png" alt="novelty-logo"></a>
-                    <a href="#"><h3> Novedades </h3></a>
+                    <a href="#">
+                        <img src="../assets/img/novelty-img.png" alt="us-logo-3">
+                        <h2 class="text-focus-in"> Novedades </h2>
+                    </a>
                     <p> Lee todas las novedades incorporadas y actualizadas sobre nosotros. </p>
 
-                </div>
+                </article>
 
-                <div class="box__section__us__4">
+                <article class="article__us-4">
 
-                    <a href="../pages/Ubicacion.html"><img class="scale-up-center heartbeat" src="../assets/imagenes/location.png" alt="location-logo"></a>
-                    <a href="../pages/Ubicacion.html"><h3> Ubicación </h3></a>
+                    <a href="./Ubicacion.html">
+                        <img src="../assets/img/location-img.png" alt="us-logo-4">
+                        <h2 class="text-focus-in"> Ubicacion </h2>
+                    </a>
                     <p> Conoce donde nos ubicamos para que visites nuestros establecimientos. </p>
+
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div class="footer-box">
+
+                <ul class="footer-sn">
+
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f heartbeat"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter heartbeat"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram heartbeat"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube heartbeat"></i></a></li>
+
+                </ul>
+
+                <ul class="footer-legal">
+
+                    <li><a href="#"> Aviso Legal </a></li>
+                    <li><a href="#"> Privacidad </a></li>
+                    <li><a href="#"> Terminos y Condiciones </a></li>
+
+                </ul>
+
+                <div class="footer-legal-legend">
+
+                    <p> Todos los artículos están sujetos a disponibilidad. El diseño de MR. TACO. y las marcas relacionadas son marcas registradas por MR. TACO Corp </p>
+                    <p class="legend-p"> Autor : Govanni González Rivera. © 2022 MR. TACO Corp, Todos Los Derechos Reservados. </p>
 
                 </div>
 
             </div>
 
-        </section>
-
-        <!-- Se cierra la Fila de Imágenes e Información sobre la Página de Nosotros -->
-        <!-- Inicio del Footer -->
-
-        <footer class="footer">
-
-            <ul class="footer__ul--sn">
-
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f heartbeat"></i></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter heartbeat"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram heartbeat"></i></a></li>
-                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube heartbeat"></i></a></li>
-
-            </ul>
-
-            <ul class="footer__ul--leg">
-
-                <li><a href="#"> Aviso Legal </a></li>
-                <li><a href="#"> Privacidad </a></li>
-                <li><a href="#"> Terminos y Condiciones </a></li>
-
-            </ul>
-
-                <p class="footer--leg1"> Todos los artículos están sujetos a disponibilidad. El diseño de MR. TACO y las marcas relacionadas son marcas registradas de MR. TACO Corp </p> 
-                <p class="footer--leg2"> Autor : Govanni Gonzalez Rivera © 2022 MR. TACO Corp, todos los derechos reservados. </p>
-
         </footer>
-            
-        <!-- Cierre del Footer -->
-        
-        <!-- Bootstrap local JS -->
-        <script src="js/Bootstrap-5.1.3/bootstrap.js"></script>
+
         <!-- Iconos Script -->
         <script src="https://kit.fontawesome.com/9a70094236.js" crossorigin="anonymous"></script>
 

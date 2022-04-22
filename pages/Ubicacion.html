@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
 
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
 
+        <!-- Fuentes Importadas -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -18,133 +15,127 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Display&display=swap" rel="stylesheet">
 
-        <!-- Bootstrap local CSS -->
-        <link rel="stylesheet" href="../css/Bootstrap-5.1.3/bootstrap.css">
-        <link rel="shortcut icon" href="../assets/imagenes/taquito.png">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../assets/img/page-logo.png">
+        <link rel="stylesheet" href="../assets/css/style.css">
 
         <title> Mr. Tacos. </title>
 
     </head>
     <body class="grid-location">
+        
+        <header>
 
-        <!-- Fila del Nombre, Logo y El Nav --> 
+            <div class="header__logo">
 
-        <header class="header">
-
-            <div class="header__box--logo">
-
-                <a href="../index.html"><img class="slit-in-diagonal-1 heartbeat" src="../assets/imagenes/taquito.png" alt="page-logo"></a> 
-                <h1 class="text-focus-in"> Mr. Tacos </h1>
+                <a href="../index.html"><img class="slit-in-diagonal-1" src="../assets/img/page-logo.png" alt="page-logo"></a>
+                <a href="../index.html"><h1 class="text-focus-in"> Mr. Tacos </h1></a>
 
             </div>
 
-            <nav class="header__nav">
+            <div class="header__nav">
 
-                <input type="checkbox" id="check-nav">
-                <label for="check-nav" class="nav__btn"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" name="check" id="check__nav">
+                <label id="label__nav" for="check__nav"><i class="fa-solid fa-bars icon__nav"></i></label>
 
-                <ul class="nav__ulist">
+                <nav>
 
-                    <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="../pages/Productos.html"> Producto </a></li>
-                    <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="../pages/Nosotros.html"> Nosotros </a></li>
-                    <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="#"> Ubicacion </a></li>
-                    <li class="nav__ulist__item"><a class="nav__ulist__item__a" href="../pages/Contacto.html"> Contacto </a></li>
+                    <ul>
 
-                </ul>
+                        <li><a href="./Productos.html"> Productos </a></li>
+                        <li><a href="./Nosotros.html"> Nosotros </a></li>
+                        <li><a href="#"> Ubicacion </a></li>
+                        <li><a href="./Contacto.html"> Contacto </a></li>
 
-            </nav>
+                    </ul>
 
-            <div class="header__box--btn">
+                </nav>
 
-                <span class="header__btn"><i class="fa-solid fa-cart-shopping tilt-in-right-1"></i></span>
+            </div>
+
+            <div>
+
+                <span class="header__btn">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                </span>
 
             </div>
 
         </header>
-        
 
-        <!-- Se cierra la Fila del Nombre, Logo y El Nav -->
-        <!-- Fila de la Section, iFrame e Información de la Ubicación -->
+        <main class="main-location">
 
-        <section class="section__location">
-                
-            <div class="box__section__location">
+            <section class="section__location">
 
-                <div class="box__section__location__title">
+                <article class="article__location">
 
-                    <h1 class="text-focus-in"> Ubicanos. </h1>
+                    <h1 class="not-transition text-focus-in"> Ubicación </h1>
+
+                </article>
+
+                <article class="article__location-1">
+
+                    <input type="text" name="location" placeholder=" Escribe tu ubicación : " required="">
+                    <label class="search-btn" for="event-0"><i class="fa-solid fa-magnifying-glass-location"></i></label>
+
+                </article>
+
+            </section>
+
+            <input id="event-0" type="checkbox">
+
+            <section class="section__location-1">
+
+                <article class="article__location__2">
+
+                    <p class="text-focus-in"> Nos Ubicamos en : </p>
+
+                </article>
+
+                <article class="article__location__2-1">
+
+                    <iframe class="location-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1862.1825114943463!2d-100.3938544007379!3d21.01807568239719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d4bbab420029e9%3A0x30fbc1cf780c2458!2sGto%2046%2C%20Buenavista%20II%2C%2037980%20San%20Jos%C3%A9%20Iturbide%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1647290835251!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <a href="https://goo.gl/maps/DbEravNRt8cSD2p8A" target="_blank"><img src="../assets/img/location-real.jpg" alt="restaurant-location"></a>
+
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div class="footer-box">
+
+                <ul class="footer-sn">
+
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f heartbeat"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter heartbeat"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram heartbeat"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube heartbeat"></i></a></li>
+
+                </ul>
+
+                <ul class="footer-legal">
+
+                    <li><a href="#"> Aviso Legal </a></li>
+                    <li><a href="#"> Privacidad </a></li>
+                    <li><a href="#"> Terminos y Condiciones </a></li>
+
+                </ul>
+
+                <div class="footer-legal-legend">
+
+                    <p> Todos los artículos están sujetos a disponibilidad. El diseño de MR. TACO. y las marcas relacionadas son marcas registradas por MR. TACO Corp </p>
+                    <p class="legend-p"> Autor : Govanni González Rivera. © 2022 MR. TACO Corp, Todos Los Derechos Reservados. </p>
 
                 </div>
-
-                <form>
-
-                    <input class="tilt-in-left-1" type="text" name="location" placeholder=" Escribe tu Ubicación :" required>
-                    <i class="fa-solid fa-magnifying-glass-location tilt-in-right-1"></i>
-
-                </form>
 
             </div>
-
-        </section>
-
-        <section class="section__box__location">
-
-            <div class="box__section__box__location">
-
-                <div class="box__section__location__subtitle">
-
-                    <h2 class="text-focus-in"> Nos ubicamos en : </h2>
-                    
-                </div>
-
-                <div class="box__section__location__iframe">
-
-                    <iframe class="location-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1862.1825114943463!2d-100.3938544007379!3d21.01807568239719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d4bbab420029e9%3A0x30fbc1cf780c2458!2sGto%2046%2C%20Buenavista%20II%2C%2037980%20San%20Jos%C3%A9%20Iturbide%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1647290835251!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>       
-
-                </div>
-
-                <div class="box__section__location__img">
-
-                    <a href="https://goo.gl/maps/DbEravNRt8cSD2p8A" target="_blank"><img class="flip-in-diag-1-tr" src="../assets/imagenes/Mr. Taco.jpg"></a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Se cierra la fila de la Section, iFrame e Información de la Ubicación -->
-        <!-- Inicio del Footer -->
-
-        <footer class="footer">
-
-            <ul class="footer__ul--sn">
-
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f heartbeat"></i></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter heartbeat"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram heartbeat"></i></a></li>
-                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube heartbeat"></i></a></li>
-
-            </ul>
-
-            <ul class="footer__ul--leg">
-
-                <li><a href="#"> Aviso Legal </a></li>
-                <li><a href="#"> Privacidad </a></li>
-                <li><a href="#"> Terminos y Condiciones </a></li>
-
-            </ul>
-
-                <p class="footer--leg1"> Todos los artículos están sujetos a disponibilidad. El diseño de MR. TACO y las marcas relacionadas son marcas registradas de MR. TACO Corp </p> 
-                <p class="footer--leg2"> Autor : Govanni Gonzalez Rivera © 2022 MR. TACO Corp, todos los derechos reservados. </p>
 
         </footer>
-            
-        <!-- Cierre del Footer -->
-        
-        <!-- Bootstrap local JS -->
-        <script src="js/Bootstrap-5.1.3/bootstrap.js"></script>
+
         <!-- Iconos Script -->
         <script src="https://kit.fontawesome.com/9a70094236.js" crossorigin="anonymous"></script>
 
